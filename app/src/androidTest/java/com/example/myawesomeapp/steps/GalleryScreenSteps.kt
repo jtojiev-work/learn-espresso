@@ -23,7 +23,6 @@ class GalleryScreenSteps {
     }
 
     fun galleryItemListSwipeUp() {
-        Thread.sleep(1000)
         galleryScreenElement.galleryItemList().perform(swipeUp())
     }
 }

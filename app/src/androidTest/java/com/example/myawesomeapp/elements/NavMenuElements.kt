@@ -18,15 +18,9 @@ class NavMenuElements {
             ),
         )
 
-    fun userProfileName(): ViewInteraction =
-        onView(
-            withText("Android Studio"),
-        )
+    fun userProfileName(): ViewInteraction = onView(withText("Android Studio"))
 
-    fun userProfileEmail(): ViewInteraction =
-        onView(
-            withText("android.studio@android.com"),
-        )
+    fun userProfileEmail(): ViewInteraction = onView(withText("android.studio@android.com"))
 
     fun homeScreenOption(): ViewInteraction =
         onView(

@@ -9,25 +9,14 @@ import com.example.myawesomeapp.R
 import org.hamcrest.core.AllOf.allOf
 
 class GalleryScreenElements {
-    fun galleryItemList(): ViewInteraction =
-        onView(
-            allOf(
-                // withEffectiveVisibility(ViewMatchers.Visibility.forViewVisibility(VISIBLE)),
-                withId(R.id.recycle_view),
-            ),
-        )
+    fun galleryItemList(): ViewInteraction = onView(withId(R.id.recycle_view))
 
     fun gallerySelectItem(itemNumber: String): ViewInteraction =
         onView(
             allOf(
                 withId(R.id.item_title),
                 withText("My title"),
-                hasSibling(
-                    allOf(
-                        withId(R.id.item_number),
-                        withText(itemNumber),
-                    ),
-                ),
+                hasSibling(allOf(withId(R.id.item_number), withText(itemNumber))),
             ),
         )
 

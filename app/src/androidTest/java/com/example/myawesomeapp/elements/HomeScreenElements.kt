@@ -47,9 +47,7 @@ class HomeScreenElements {
             allOf(
                 isDescendantOfA(withId(R.id.toolbar)),
                 isAssignableFrom(ImageView::class.java),
-                withContentDescription(
-                    "More options",
-                ),
+                withContentDescription("More options"),
             ),
         )
 
@@ -57,14 +55,9 @@ class HomeScreenElements {
         onView(
             allOf(
                 withId(R.id.fab),
-                withContentDescription(
-                    "Floating action button",
-                ),
+                withContentDescription("Floating action button"),
             ),
         )
 
-    fun homeScreenNotificationMessage(): ViewInteraction =
-        onView(
-            withText("Replace with your own action"),
-        )
+    fun homeScreenNotificationMessage(): ViewInteraction = onView(withText("Replace with your own action"))
 }
