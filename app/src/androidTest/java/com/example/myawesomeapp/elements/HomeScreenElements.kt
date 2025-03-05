@@ -18,8 +18,8 @@ class HomeScreenElements {
         onView(
             allOf(
                 withId(R.id.text_home),
-                withText("This is home Fragment"),
-            ),
+                withText("This is home Fragment")
+            )
         )
 
     fun toolbarBurgerButton(): ViewInteraction =
@@ -27,8 +27,8 @@ class HomeScreenElements {
             allOf(
                 isDescendantOfA(withId(R.id.toolbar)),
                 isAssignableFrom(ImageButton::class.java),
-                withContentDescription("Open navigation drawer"),
-            ),
+                withContentDescription("Open navigation drawer")
+            )
         )
 
     fun toolbarTitle(title: String): ViewInteraction =
@@ -36,8 +36,8 @@ class HomeScreenElements {
             allOf(
                 isDescendantOfA(withId(R.id.toolbar)),
                 isAssignableFrom(TextView::class.java),
-                withText(title),
-            ),
+                withText(title)
+            )
         )
 
     fun moreActionButton(): ViewInteraction =
@@ -45,17 +45,18 @@ class HomeScreenElements {
             allOf(
                 isDescendantOfA(withId(R.id.toolbar)),
                 isAssignableFrom(ImageView::class.java),
-                withContentDescription("More options"),
-            ),
+                withContentDescription("More options")
+            )
         )
 
     fun greenEmailButton(): ViewInteraction =
         onView(
             allOf(
                 withId(R.id.fab),
-                withContentDescription("Floating action button"),
-            ),
+                withContentDescription("Floating action button")
+            )
         )
 
-    fun homeScreenNotificationMessage(): ViewInteraction = onView(withText("Replace with your own action"))
+    fun homeScreenNotificationMessage(): ViewInteraction =
+        onView(withText("Replace with your own action"))
 }

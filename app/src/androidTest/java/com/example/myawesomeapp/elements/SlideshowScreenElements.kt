@@ -12,7 +12,7 @@ class SlideshowScreenElements {
         onView(
             allOf(
                 withId(R.id.text_slideshow),
-                withText("This is slideshow Fragment"),
-            ),
+                withText("This is slideshow Fragment")
+            )
         )
 }

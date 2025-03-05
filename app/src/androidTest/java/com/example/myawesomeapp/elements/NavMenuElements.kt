@@ -14,8 +14,8 @@ class NavMenuElements {
         onView(
             allOf(
                 withId(R.id.imageView),
-                withContentDescription("Navigation header"),
-            ),
+                withContentDescription("Navigation header")
+            )
         )
 
     fun userProfileName(): ViewInteraction = onView(withText("Android Studio"))
@@ -26,23 +26,23 @@ class NavMenuElements {
         onView(
             allOf(
                 isDescendantOfA(withId(R.id.nav_home)),
-                withText("Home"),
-            ),
+                withText("Home")
+            )
         )
 
     fun galleryScreenOption(): ViewInteraction =
         onView(
             allOf(
                 isDescendantOfA(withId(R.id.nav_gallery)),
-                withText("Gallery"),
-            ),
+                withText("Gallery")
+            )
         )
 
     fun slideShowScreenOption(): ViewInteraction =
         onView(
             allOf(
                 isDescendantOfA(withId(R.id.nav_slideshow)),
-                withText("Slideshow"),
-            ),
+                withText("Slideshow")
+            )
         )
 }

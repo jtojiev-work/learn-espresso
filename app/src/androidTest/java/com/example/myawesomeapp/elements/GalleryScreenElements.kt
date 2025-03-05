@@ -16,12 +16,12 @@ class GalleryScreenElements {
             allOf(
                 withId(R.id.item_title),
                 withText("My title"),
-                hasSibling(allOf(withId(R.id.item_number), withText(itemNumber))),
-            ),
+                hasSibling(allOf(withId(R.id.item_number), withText(itemNumber)))
+            )
         )
 
     fun gallerySelectedItemNotification(itemNumber: String): ViewInteraction =
         onView(
-            withText("Item #$itemNumber clicked successfully!"),
+            withText("Item #$itemNumber clicked successfully!")
         )
 }
