@@ -27,9 +27,7 @@ class HomeScreenElements {
             allOf(
                 isDescendantOfA(withId(R.id.toolbar)),
                 isAssignableFrom(ImageButton::class.java),
-                withContentDescription(
-                    "Open navigation drawer",
-                ),
+                withContentDescription("Open navigation drawer"),
             ),
         )
 
